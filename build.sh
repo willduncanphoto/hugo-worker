@@ -28,7 +28,10 @@ main() {
   # https://gohugo.io/methods/page/gitinfo/#hosting-considerations
   # git fetch --recurse-submodules --unshallow
 
-  # Build the site.
+  # https://github.com/gohugoio/hugo/issues/9810
+  # git config core.quotepath false
+
+  # Build the site!
   hugo --gc --minify
 
 }
