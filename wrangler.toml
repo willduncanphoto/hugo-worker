@@ -7,8 +7,3 @@ command = "./build.sh"
 [assets]
 directory = "./public"
 not_found_handling = "404-page"
-
-[env.test]
-vars = { ENVIRONMENT = "test" }
-route = "test.willduncan.com/*"
-workers_dev = true
