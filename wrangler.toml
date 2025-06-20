@@ -1,6 +1,9 @@
 name = "hugo-worker"
 compatibility_date = "2025-06-18"
 
+[env.dev]
+route = "test.willduncan.com"
+
 [build]
 command = "./build.sh"
 
