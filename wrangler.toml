@@ -1,12 +1,14 @@
 name = "hugo-worker"
 compatibility_date = "2025-06-18"
 
-[env.dev]
-route = "test.willduncan.com"
-
 [build]
 command = "./build.sh"
 
 [assets]
 directory = "./public"
 not_found_handling = "404-page"
+
+[env.staging]
+vars = { ENVIRONMENT = "staging" }
+route = "staging.willduncan.com/*"
+workers_dev = true
