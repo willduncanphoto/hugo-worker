@@ -8,7 +8,7 @@ command = "./build.sh"
 directory = "./public"
 not_found_handling = "404-page"
 
-[env.staging]
-vars = { ENVIRONMENT = "staging" }
-route = "staging.willduncan.com/*"
+[env.test]
+vars = { ENVIRONMENT = "test" }
+route = "test.willduncan.com/*"
 workers_dev = true
