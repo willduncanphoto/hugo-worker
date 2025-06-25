@@ -8,7 +8,7 @@
 
 main() {
 
-  HUGO_VERSION=0.147.7
+  HUGO_VERSION=0.147.2
 
   export TZ=America/Los_Angeles
 
